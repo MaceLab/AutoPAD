@@ -1,0 +1,43 @@
+>0
+	$CIRCLE 0.25
+	$CUT
+	>LAYER 1
+		$CIRCLE 0.25
+		$CUT
+		>ANGLE 90
+			$RECT 1.2 0.3
+			>ANGLE 90
+				$PLACE 1
+				$CIRCLE 0.25
+				$CUT
+				>LAYER 3
+					$CIRCLE 0.25
+					$CUT
+				>1
+				>LAYER 2
+					$CIRCLE 0.4
+					$BUFFER 0.1
+					>ANGLE 270
+						$RECT 0.40 0.40
+						>ANGLE 270
+							$CIRCLE 0.2
+							$CUT
+" add the alignment holes
+>0
+	>DOWN
+		$SPACE 0.8
+		$CIRCLE 0.1
+		$BUFFER 0.1 0.1
+		"$CUT
+		>LAYER 1
+			$CIRCLE 0.1
+			"$CUT
+			>LAYER 2
+				$CIRCLE 0.1
+				"$CUT
+				>LAYER 3
+					$CIRCLE 0.1
+					"$CUT
+>0
+	$BUFFER_BOX 0.15 0.15
+	$FILL 57 CS_MaceImmunoassay

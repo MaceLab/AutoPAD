@@ -1,0 +1,17 @@
+>0
+	$CIRCLE 1
+	$BUFFER 0.5
+	>ANGLE 0
+		$TEXT Sample Text
+		$TEXT_FONT MoolBoran
+		$COLOR 1 0 0
+		$SPACE 1.5
+>0
+	>ANGLE 0
+		$TEXT Sample Text
+		$TEXT_FONT Giddyup Std
+		$COLOR 1 0 0
+		$SPACE 1.5
+		$PERPSPACE 1
+	>0
+	$FILL  28.35  example45.txt

@@ -1,0 +1,133 @@
+{ 0
+	$TEMP 0
+	>TEMP 0
+	>ANGLE 0
+		$RECT 2 0.5
+		$BUFFER 0.5 0.5
+		>LAYER (((TEMP 0) . LAYER) + -1)
+			$SPACE -0.5
+			$RECT 0.5 0.5
+			$BUFFER 0.5 0.5
+			>LAYER (((TEMP 0) . LAYER) + -2)
+				$SPACE -0.5
+				$RECT 3 0.5
+				$BUFFER 0.5 0.5
+				>LAYER (((TEMP 0) . LAYER) + -1)
+					$RECT 0.5 0.5
+					$SPACE -0.5
+					$BUFFER 0.5 0.5
+					>LAYER (((TEMP 0) . LAYER) + 0)
+						$SPACE -0.5
+						$RECT 2 0.5
+						$BUFFER 0.5 0.5
+						>LAYER (((TEMP 0) . LAYER) + -1)
+							$SPACE -0.5
+							$RECT 0.5 0.5
+							$BUFFER 0.5 0.5
+							>LAYER (((TEMP 0) . LAYER) + -2)
+								$SPACE -0.5
+								$RECT 3 0.5
+								$BUFFER 0.5 0.5
+								>LAYER (((TEMP 0) . LAYER) + -1)
+									$SPACE -0.5
+									$RECT 0.5 0.5
+									$BUFFER 0.5 0.5
+									>LAYER (((TEMP 0) . LAYER) + 0)
+										$SPACE -0.5
+										$RECT 2 0.5
+										$BUFFER 0.5 0.5
+										>ANGLE 90
+											$RECT 2 0.5
+											$BUFFER 0.5 0.5
+											>ANGLE 180
+												$RECT 4 0.5
+												$BUFFER 0.5 0.5
+												>LAYER (((TEMP 0) . LAYER) + -1)
+													$SPACE -0.5
+													$RECT 0.5 0.5
+													$BUFFER 0.5 0.5
+													>LAYER (((TEMP 0) . LAYER) + -2)
+														$RECT 3 0.5
+														$SPACE -0.5
+														$BUFFER 0.5 0.5
+														>LAYER (((TEMP 0) . LAYER) + -1)
+															$SPACE -0.5
+															$RECT 0.5 0.5
+															$BUFFER 0.5 0.5
+															>LAYER (((TEMP 0) . LAYER) + 0)
+																$RECT 2 0.5
+																$SPACE -0.5
+																$BUFFER 0.5 0.5
+																>LAYER (((TEMP 0) . LAYER) + -1)
+																	$SPACE -0.5
+																	$RECT 0.5 0.5
+																	$BUFFER 0.5 0.5
+																	>LAYER (((TEMP 0) . LAYER) + -2)
+																		$SPACE -0.5
+																		$RECT 3 0.5
+																		$BUFFER 0.5 0.5
+																		>LAYER (((TEMP 0) . LAYER) + -1)
+																			$SPACE -0.5
+																			$RECT 0.5 0.5
+																			$BUFFER 0.5 0.5
+																			>LAYER (((TEMP 0) . LAYER) + 0)
+																				$SPACE -0.5
+																				$RECT 2 0.5
+																				$BUFFER 0.5 0.5
+	}																				$BUFFER 0.5 0.5
+>0
+	$PLACE 0
+	>ANGLE 0
+		$CIRCLE 0.75
+		$BUFFER 1
+	>0
+	>ANGLE 0
+		$PLACE 1
+		{ 0 } ANGLE 0
+	>1
+		>ANGLE 0
+			$PLACE 2
+			$SPACE 7
+			>ANGLE 270
+				$PLACE 3
+				$SPACE 1
+				>ANGLE 180
+					$PLACE 4
+					$CIRCLE 0.75
+					$BUFFER 1
+					>ANGLE 270
+						$PLACE 5
+						$TEMP 0
+						{ 0 } ANGLE 90
+	>4
+		>ANGLE (0 + 90)
+			$PLACE 6
+			$SPACE 7
+			>ANGLE (270 + 90)
+				$PLACE 7
+				$SPACE 1
+				>ANGLE (180 + 90)
+					$PLACE 8
+					$CIRCLE 0.75
+					$BUFFER 1
+					>ANGLE (270 + 90)
+						$PLACE 9
+						$TEMP 0
+						{ 0 } ANGLE 180
+	>8
+		>ANGLE (0 + 180)
+			$PLACE 10
+			$SPACE 7
+			>ANGLE (270 + 180)
+				$PLACE 11
+				$SPACE 1
+				>ANGLE (180 + 180)
+					$PLACE 12
+					$CIRCLE 0.75
+					$BUFFER 1
+					>ANGLE (270 + 180)
+						$PLACE 13
+						$TEMP 0
+						{ 0 } ANGLE 270
+	>0
+	$FILL 20 EX_weave_2.txt

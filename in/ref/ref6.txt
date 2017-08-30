@@ -1,0 +1,3 @@
+	{ 5 } ANGLE 70
+	>BACK 4
+	{ 5 } ANGLE 85

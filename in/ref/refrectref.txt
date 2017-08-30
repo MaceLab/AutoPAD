@@ -1,0 +1,9 @@
+	>ANGLE (VAR 0)
+		$RECT 4 2
+		$BUFFER 1 1
+		{ nestedref }
+		>ANGLE (VAR 0)
+			$CIRCLE 1
+			$BUFFER 1.1
+			$VAR 0 ((VAR 0) + 20)
+"END REFERENCE

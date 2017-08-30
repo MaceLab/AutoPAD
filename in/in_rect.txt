@@ -1,0 +1,7 @@
+>0
+	>ANGLE 30
+	$RECT 12 2
+	$BUFFER 2 2
+	$COLOR 255 255 255
+>0
+$FILL 20 in_rect 

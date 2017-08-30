@@ -1,0 +1,5 @@
+>0
+	$CIRCLE 1
+	$BUFFER 1
+	$FILL 28.35 in_scaletest_1_cm
+	$FILL 72 in_scaletest_1_inch

@@ -1,0 +1,11 @@
+" Equilateral triangle script
+" INPUTS: VAR 0 = side length
+" ex. 
+" { equ_triangle } ANGLE 0 SIDELEN 8
+$POLY
+	$VAR 1 ((((VAR 0) ^ 2) - (((VAR 0) / 2) ^ 2)) ^ 0.5)
+	$VERTEX 0 ((VAR 0) / 2)
+	$VERTEX (VAR 1) 0
+	$VERTEX 0 ((VAR 0) / -2)
+	$PRECISE
+

@@ -1,0 +1,20 @@
+>0
+$CIRCLE 3
+$BUFFER 1
+$COLOR 255 255 255
+	>RIGHT
+	{ triangle } ANGLE 0 BASE 8 HEIGHT 6
+		$BUFFER 3
+	$COLOR 255 0 0
+>0
+	>LEFT
+	{ right_triangle } ANGLE 0 BASE 8 HEIGHT 6
+		$BUFFER 3
+	$COLOR 0 255 0
+>0
+	>UP
+	{ equ_triangle } ANGLE 0 BASE 3
+		$BUFFER 3
+	$COLOR 0 0 255
+>0
+$FILL 40 TEST1_tri1

@@ -1,0 +1,46 @@
+>0
+	$PLACE 0
+	>0
+	>ANGLE 90
+		$PLACE 1
+		$RECT 4 1.8
+		$BUFFER 1 1
+		>1
+		>ANGLE 90
+			$PLACE 2
+			$RECT 1.25 0.5
+			$BUFFER 0 1
+			>2
+			>ANGLE 90
+				$PLACE 3
+				$CIRCLE 1
+				$BUFFER 1
+				$PRECISE
+		>1
+		>ANGLE 15
+			$PLACE 4
+			$RECT 1.65 0.5
+			$BUFFER 0 1
+			>4
+			>ANGLE 0
+				$PLACE 5
+				$POLY
+				$VX 0 -0.65
+				$VX 2 -0.65
+				$VX 2 1.35
+				$VX 0 1.35
+				$BUFFER 1
+				$SPACE -0.15
+		>1
+		>ANGLE 165
+			$PLACE 6
+			$RECT 1.4 0.5
+			$BUFFER 0 1
+			>6
+			>ANGLE 165
+				$PLACE 7
+				$CIRCLE 1
+				$BUFFER 1
+				$PRECISE
+	>0
+	$FILL 80 EX_Tree.txt

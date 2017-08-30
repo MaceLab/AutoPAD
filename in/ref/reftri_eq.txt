@@ -1,0 +1,7 @@
+	$POLY
+		$VAR 1 ((((VAR 0) ^ 2) - (((VAR 0) / 2) ^ 2)) ^ 0.5)
+		$VERTEX 0 ((VAR 0) / 2)
+		$VERTEX (VAR 1) 0
+		$VERTEX 0 ((VAR 0) / -2)
+		$PRECISE
+"END REFERENCE

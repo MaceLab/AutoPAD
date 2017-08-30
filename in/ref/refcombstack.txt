@@ -1,0 +1,6 @@
+	#ID ((BACK 0) + 1)
+		#LAYER 0
+		#DOWN (TEMP 1)
+		#TEMP 1
+		{ combstack2 } x 4
+"END REFERENCE

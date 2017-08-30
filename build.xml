@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="AutoPAD">
+    <property environment="env"/>
+    <property name="AutoPADInterface.location" value="../AutoPADInterface"/>
+    <property name="ECLIPSE_HOME" value="../../Desktop/P/eclipse"/>
+    <property name="org.eclipse.swt.location" value="../org.eclipse.swt"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <import file="swtbuild.xml"/>
+    <path id="org.eclipse.swt.classpath">
+        <pathelement location="${org.eclipse.swt.location}/."/>
+        <pathelement location="${org.eclipse.swt.location}/swt.jar"/>
+    </path>
+    <path id="AutoPAD.classpath">
+        <pathelement location="bin"/>
+        <path refid="org.eclipse.swt.classpath"/>
+        <pathelement location="../commons-logging-1.2/commons-logging-1.2.jar"/>
+        <pathelement location="../commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+        <pathelement location="../fontbox-2.0.0-RC1.jar"/>
+        <pathelement location="../pdfbox-1.8.10.jar"/>
+        <pathelement location="../pdfbox-tools-2.0.0-RC1.jar"/>
+        <pathelement location="../preflight-2.0.0-RC1.jar"/>
+        <pathelement location="../xmpbox-2.0.0-RC1.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${org.eclipse.swt.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${org.eclipse.swt.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="AutoPAD.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="build.xml" dir="${AutoPADInterface.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${AutoPADInterface.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="AutoPAD">
+        <java classname="autopad.AutoPAD" failonerror="true" fork="yes">
+            <classpath refid="AutoPAD.classpath"/>
+        </java>
+    </target>
+</project>

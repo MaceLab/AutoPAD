@@ -1,0 +1,27 @@
+{ 1
+	>ANGLE 0
+	$RECT (((BACK 1) . RECT_LEN) + 2) 2
+	$BUFFER 2 2
+	$COLOR 255 255 255
+}
+{ 2
+	{ 1 } ANGLE (((BACK 0) . SANGLE) + 30)
+}
+
+>0
+$CIRCLE 3
+$BUFFER 2
+$COLOR 255 255 255
+	>UP
+	$RECT 10 2
+	$BUFFER 2
+	$COLOR 255 255 255
+	{ 2 } ANGLE 0
+	{ 2 } ANGLE 0
+	{ 2 } ANGLE 0
+	{ 2 } ANGLE 0
+	{ 2 } ANGLE 0
+	{ 2 } ANGLE 0
+	{ 2 } ANGLE 0
+>0
+$FILL 20 TEST1_ref3

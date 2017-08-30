@@ -1,0 +1,118 @@
+{ circref
+	$CIRCLE (VAR 0)
+	$BUFFER (VAR 0)
+}
+>0
+	"circle rad
+	$VAR 0 1
+	"space between circles
+	$VAR 1 3
+	{ circref }
+	>ANGLE 0
+		$PLACE 2
+		$SPACE (VAR 1)
+		{ circref }
+		>ANGLE 90
+			$PLACE 3
+			$SPACE (VAR 1)
+			{ circref }
+			>ANGLE 180
+				$SPACE (VAR 1)
+				{ circref }
+				>LAYER 0
+					$PLACE 8
+					{ circref }
+					>ANGLE 90
+						$RECT (VAR 1) (VAR 0)
+						$BUFFER (VAR 0)
+						>ANGLE 90
+							{ circref }
+							>LAYER 2
+								{ circref }
+								$EXTRA 2 2
+					>8
+					>LAYER 2
+						{ circref }
+			>3
+			>LAYER 0
+				$PLACE 7
+				{ circref }
+				>ANGLE 90
+					$RECT (VAR 1) (VAR 0)
+					$BUFFER (VAR 0)
+					>ANGLE 90
+						{ circref }
+						>LAYER 2
+							{ circref }
+							$EXTRA 2 2
+				>7
+				>LAYER 2
+					{ circref }
+		>2
+		>LAYER 1
+			$PLACE 6
+			{ circref }
+			>ANGLE 270
+				$RECT (VAR 1) (VAR 0)
+				$BUFFER (VAR 0)
+				>ANGLE 270
+					{ circref }
+					>LAYER 2
+						{ circref }
+						$EXTRA 2 2
+			>6
+			>LAYER 2
+				{ circref }
+	>0
+	>LAYER 1
+		$PLACE 5
+		{ circref }
+		>ANGLE 270
+			$RECT (VAR 1) (VAR 0)
+			$BUFFER (VAR 0)
+			>ANGLE 270
+				{ circref }
+				>LAYER 2
+					{ circref }
+					$EXTRA 2 2
+		>5
+		>LAYER 2
+			{ circref }
+>0
+	$BUFFER_BOX 0 1 
+	$FILL 20 EX_orig.txt
+	$BUFFER_BOX 1 1
+#COMBINE 1
+	#ID 0
+		#LAYER 0
+	#ID 1
+		#LAYER 1
+		#DOWN 0
+		#ROTATE 90
+	#ID 2
+		#LAYER 2
+		#DOWN 1
+		#ROTATE 90
+	#ID 3
+		#LAYER 2
+		#RIGHT 0
+		#ROTATE 90
+	#ID 4
+		#LAYER 1
+		#RIGHT 3
+		#ROTATE 90
+	#ID 5
+		#LAYER 1
+		#DOWN 3
+	#ID 6
+		#LAYER 2
+		#DOWN 5
+	#ID 7
+		#LAYER 2
+		#RIGHT 5
+	#ID 8
+		#LAYER 1
+		#RIGHT 6
+	#SQUARE
+	#BOX
+	#FILL orig1

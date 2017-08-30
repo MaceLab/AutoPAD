@@ -1,0 +1,125 @@
+{ rectpiece 
+	>LAYER (((TEMP 0) . LAYER) + (VAR 0))
+		$SPACE (VAR 1)
+		$RECT (VAR 2) 0.5
+		$BUFFER 0.5 0.5
+		$COLOR ((TEMP 0) . COLOR_RED) ((TEMP 0) . COLOR_GREEN) ((TEMP 0) . COLOR_BLUE)
+}
+{ 0
+	$TEMP 0
+	>ANGLE 0
+		$RECT 6 0.5
+		$BUFFER 0.5 0.5
+		$COLOR ((TEMP 0) . COLOR_RED) ((TEMP 0) . COLOR_GREEN) ((TEMP 0) . COLOR_BLUE)
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } -2 -0.5 3
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } 0 -0.5 4
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } -2 -0.5 3
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } 0 -0.5 0.5
+			$TEMP 1
+		>LAYER ((TEMP 0) . LAYER)
+		>ANGLE 270
+			"$RECT 2 0.5
+			$SPACE 2
+			$BUFFER 0.5 0.5
+			$COLOR ((TEMP 0) . COLOR_RED) ((TEMP 0) . COLOR_GREEN) ((TEMP 0) . COLOR_BLUE)
+			>ANGLE 180
+				$TEMP 2
+		>TEMP 1
+			>ANGLE 0
+				$POLY
+				$VAR 10 -0.5
+				" wid of turnabout
+				$VAR 11 1.25
+				" len of turnabout
+				$VAR 12 -2
+				" hei of turnabout
+				"Note: must do outside first
+				$VERTEX 0 ((VAR 10) / -2) cdown 1
+				$VERTEX (VAR 11) ((VAR 12) / 2) cup 2
+				$VERTEX 0 ((VAR 12) + ((VAR 10) / 2)) 
+				"Loop back around the inside
+				$VERTEX 0 ((VAR 12) - ((VAR 10) / 2)) cup 2
+				$VERTEX (((VAR 11) + (VAR 10)) * 1) ((VAR 12) / 2) cdown 1
+				$VERTEX 0 ((VAR 10) / 2)
+				$COLOR ((TEMP 0) . COLOR_RED) ((TEMP 0) . COLOR_GREEN) ((TEMP 0) . COLOR_BLUE)
+				$BUFFER 0.75
+		>TEMP 2
+			{ rectpiece } 0 -0.1 2.6
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } -2 -0.5 3
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } 0 -0.5 4
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } -2 -0.5 3
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } 0 -0.5 4																
+}																			
+>0
+	$PLACE 0
+	>ANGLE 90
+		$CIRCLE 0.75
+		$BUFFER 1
+		$COLOR RED
+	>0
+	>ANGLE 90
+		$PLACE 1
+		$COLOR RED
+		{ 0 } ANGLE 90
+	>1
+		>ANGLE 270
+			$PLACE 2
+			$SPACE 13
+			>ANGLE 0
+				$PLACE 3
+				$SPACE 5
+				>ANGLE 0
+					$PLACE 4
+					$CIRCLE 0.75
+					$COLOR GREEN
+					$BUFFER 1
+					>ANGLE 0
+						$PLACE 5
+						$TEMP 0
+						$COLOR GREEN
+						{ 0 } ANGLE 180
+	>4
+		>ANGLE (270 - 90)
+			$PLACE 6
+			$SPACE 13
+			>ANGLE (0 - 90)
+				$PLACE 7
+				$SPACE 5
+				>ANGLE (0 - 90)
+					$PLACE 8
+					$CIRCLE 0.75
+					$COLOR BLUE
+					$BUFFER 1
+					>ANGLE (0 - 90)
+						$PLACE 9
+						$TEMP 0
+						$COLOR BLUE
+						{ 0 } ANGLE 270
+	>8
+		>ANGLE (270 - 180)
+			$PLACE 10
+			$SPACE 13
+			>ANGLE (0 - 180)
+				$PLACE 11
+				$SPACE 5
+				>ANGLE (0 - 180)
+					$PLACE 12
+					$CIRCLE 0.75
+					$COLOR YEL
+					$BUFFER 1
+					>ANGLE (0 - 180)
+						$PLACE 13
+						$TEMP 0
+						$COLOR YEL
+						{ 0 } ANGLE 0
+>0
+	$BUFFER_BOX 1 1
+	$FILL 30 EX_weave_3_mod.txt

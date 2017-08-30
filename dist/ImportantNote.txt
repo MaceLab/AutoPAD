@@ -1,0 +1,5 @@
+When building distributions:
+
+1. goto Eclipse->File->Export: Runnable .JAR file
+2. export a DeviceDraw.jar to this folder
+3. THEN build the project

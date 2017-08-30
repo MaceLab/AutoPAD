@@ -1,0 +1,52 @@
+	$TEMP 0
+	>ANGLE 0
+		$RECT 4 0.5
+		$BUFFER 0.5 0.5
+		{ col }
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } -2 -0.5 3
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } 0 -0.5 2
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } -2 -0.5 3
+		{ rectpiece } -1 -0.5 0.5
+		{ rectpiece } 0 -0.5 0.5
+			$TEMP 1
+			“ will place turnabout here
+		>ANGLE 270
+			$SPACE 2
+			$BUFFER 0.5 0.5
+			{ col }
+			>ANGLE 180
+				" will come back here to continue chain
+				$TEMP 2
+		>TEMP 1
+			>ANGLE 0
+				$POLY
+				$VAR 10 -0.5
+				" wid of turnabout
+				$VAR 11 1.25
+				" len of turnabout
+				$VAR 12 -2
+				" hei of turnabout
+				"Note: must do outside first
+				$VERTEX 0 ((VAR 10) / -2) cdown 1
+				$VERTEX (VAR 11) ((VAR 12) / 2) cup 2
+				$VERTEX 0 ((VAR 12) + ((VAR 10) / 2)) 
+				"Loop back around the inside
+				$VERTEX 0 ((VAR 12) - ((VAR 10) / 2)) cup 2
+				$VERTEX (((VAR 11) + (VAR 10)) * 1) ((VAR 12) / 2) cdown 1
+				$VERTEX 0 ((VAR 10) / 2)
+				{ col }
+				$BUFFER 0.75
+		>TEMP 2
+			{ rectpiece } 0 -0.1 2.6
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } -2 -0.5 3
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } 0 -0.5 2
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } -2 -0.5 3
+			{ rectpiece } -1 -0.5 0.5
+			{ rectpiece } 0 -0.5 2																
+"END REFERENCE

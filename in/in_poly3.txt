@@ -1,0 +1,44 @@
+>0
+$CIRCLE 3
+$COLOR 255 255 255
+$BUFFER 1
+>0
+	>RIGHT
+	$POLY
+		$VX 0 5
+		$VX 10 0
+		$VX 0 -5
+		$BUFFER 2
+		$COLOR 255 255 255 
+	>RIGHT
+	$SPACE 5
+	$POLY
+		$VX 0 5
+		$VX 10 5
+		$VX 10 -5
+		$VX 0 -5
+		$BUFFER 2
+		$COLOR 255 255 255 
+	>RIGHT
+	$SPACE 5
+	$POLY
+		$VX 0 5
+		$VX 10 5
+		$VX 12.5 0
+		$VX 10 -5
+		$VX 0 -5
+		$BUFFER 2
+		$COLOR 255 255 255 
+	>RIGHT
+	$SPACE 5
+	$POLY
+		$VX 0 0
+		$VX 2.5 5
+		$VX 12.5 5
+		$VX 15 0
+		$VX 12.5 -5
+		$VX 2.5 -5
+		$BUFFER 2
+		$COLOR 255 255 255
+>0
+$FILL 20 in_poly3

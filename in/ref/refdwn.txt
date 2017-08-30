@@ -1,0 +1,113 @@
+	$VAR 16 14
+	$VAR 15 0
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT down
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT we 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT went. 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT And 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT the 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT dead 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT tree 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT gives 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT no 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT shelter, 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT the 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT cricket 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT no 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT relief, 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT And 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT the 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT dry 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT stone 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT no 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT sound 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT of 
+		$VAR 15 ((VAR 15) + (VAR 16))
+	>ANGLE (VAR 15)
+		$COLOR 0 0 0
+		$SPACE 0.75
+		$TEXT water.
+		$VAR 15 ((VAR 15) + (VAR 16))
+"END REFERENCE

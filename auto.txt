@@ -1,0 +1,9 @@
+" auto.txt
+" This file is used to automatically digest certain scripts upon starting the DeviceDrawer program
+" i.e. instead of needing to manually open the file, you can list its name here, run the program
+" and it will be compiled.
+" any line starting with " will be ignored
+" ex. in\in_poly1.txt
+
+" in\in_talkfigure_1.txt
+in\CS_MaceImmunoassay_new.txt

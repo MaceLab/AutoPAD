@@ -1,0 +1,6 @@
+	>ANGLE ((VAR 0) - 90)
+		$RECT 5 1.5
+		$BUFFER 1 1
+		>BACK 1
+		
+"END REFERENCE

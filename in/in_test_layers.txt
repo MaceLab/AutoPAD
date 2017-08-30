@@ -1,0 +1,14 @@
+>0
+	>ANGLE 135
+		$RECT len 8 wid 2
+		$BUFFER 1 0.5
+		>LAYER 1
+			$SPACE -1
+			$RECT len 10 wid 2
+			$BUFFER 1 0.5
+			>LAYER 0
+				$SPACE -1
+				$RECT len 4 wid 2
+				$BUFFER 1 0.5
+>0
+	$FILL 30 example9

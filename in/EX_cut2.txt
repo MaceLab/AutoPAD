@@ -1,0 +1,77 @@
+>0
+	$PLACE 0
+	>0
+	>ANGLE 180
+		$PLACE 1
+		$RECT 6 8
+		$BUFFER 0.5 0.5
+		$CUT
+		>1
+		>ANGLE 180
+			$PLACE 2
+			$RECT 7 2
+			$BUFFER 0.5 0.5
+			$CUT
+			>2
+			>ANGLE 180
+				$PLACE 3
+				$RECT 7 2
+				$BUFFER 0.5 0.5
+				$CUT
+				>3
+				>ANGLE 180
+					$PLACE 4
+					$RECT 7 2
+					$BUFFER 0.5 0.5
+					$CUT
+					>4
+					>ANGLE 270
+						$PLACE 7
+						$RECT 5 2
+						$BUFFER 0.5 0.5
+						$CUT
+						>7
+						>LAYER 1
+							$PLACE 10
+							$RECT 3 2
+							$BUFFER 0.5 0.5
+							$CUT
+							>10
+							>ANGLE 270
+								$PLACE 11
+								$RECT 3.5 3.5
+								$BUFFER 0.5 0.5
+								$SPACE -0.5
+								$CUT
+					>4
+					>ANGLE 180
+						$PLACE 12
+						$RECT 1 2
+						$BUFFER 0.5 0.5
+						$CUT
+				>3
+				>ANGLE 270
+					$PLACE 6
+					$RECT 4 2
+					$BUFFER 0.5 0.5
+					$CUT
+					>6
+					>LAYER 1
+						$PLACE 9
+						$RECT 3 3
+						$BUFFER 0.5 0.5
+						$CUT
+			>2
+			>ANGLE 270
+				$PLACE 5
+				$RECT 3 2
+				$BUFFER 0.5 0.5
+				$CUT
+				>5
+				>LAYER 1
+					$PLACE 8
+					$RECT 3 3
+					$BUFFER 0.5 0.5
+					$CUT
+	>0
+	$FILL 20 EX_cut2.txt
