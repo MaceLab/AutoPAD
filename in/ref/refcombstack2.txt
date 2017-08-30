@@ -1,4 +1,0 @@
-	#ID ((BACK 0) + 1)
-		#LAYER 0
-		#RIGHT (BACK 1)
-"END REFERENCE

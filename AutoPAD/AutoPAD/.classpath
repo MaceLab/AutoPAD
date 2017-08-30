@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.swt"/>
+	<classpathentry kind="lib" path="D:/Java/workspace_0/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java/workspace_0/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Java/workspace_0/fontbox-2.0.0-RC1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/workspace_0/pdfbox-1.8.10.jar"/>
+	<classpathentry kind="lib" path="D:/Java/workspace_0/pdfbox-tools-2.0.0-RC1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/workspace_0/preflight-2.0.0-RC1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/workspace_0/xmpbox-2.0.0-RC1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

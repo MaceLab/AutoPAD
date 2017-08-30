@@ -1,3 +1,0 @@
-	{ 4 } ANGLE 124
-	>BACK 2
-	{ 4 } ANGLE 45
