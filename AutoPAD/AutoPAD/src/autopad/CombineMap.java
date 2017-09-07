@@ -175,7 +175,7 @@ public class CombineMap {
 		while(i<nodecount){
 			int nid = nodeid[i];
 			try{
-				BufferedImage timage = ImageIO.read(new File("./out/" + fillname + "_" + nodelayer[nid] + ".png"));
+				BufferedImage timage = ImageIO.read(new File(targetpath + fillname + "_" + nodelayer[nid] + ".png"));
 				layerx[nodelayer[nid]+minlayer]=timage.getWidth();
 				layery[nodelayer[nid]+minlayer]=timage.getHeight();
 				reallayerx[nodelayer[nid]+minlayer]=timage.getWidth();
@@ -286,7 +286,7 @@ public class CombineMap {
 			while(i<nodecount){
 				int nid=nodeid[i];
 				try{
-					//BufferedImage timage = ImageIO.read(new File("./out/" + fillname + "_" + nodelayer[nid] + ".png"));
+					//BufferedImage timage = ImageIO.read(new File(targetpath + fillname + "_" + nodelayer[nid] + ".png"));
 					
 					int realx = nodeposx[nid]+centerx;
 					int realy = nodeposy[nid]+centery;
@@ -363,7 +363,7 @@ public class CombineMap {
 			}
 
 			try{
-				BufferedImage timage = ImageIO.read(new File("./out/" + fillname + "_" + nodelayer[nid] + ".png"));
+				BufferedImage timage = ImageIO.read(new File(targetpath + fillname + "_" + nodelayer[nid] + ".png"));
 				int h =0;
 				while(h<timage.getWidth()){
 					int j=0;
