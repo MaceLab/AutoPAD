@@ -111,6 +111,16 @@ public class Interpreter {
 	
 	// flush() is used to clear everything out and prepare the interpreter for a new script.
 	public static void flush(){
+		if(targetpath.equals("./out/")){
+			String tarstr = System.getProperty("user.dir");
+			if(tarstr.contains("\\")){ // different OS systems use different slash conventions
+				tarstr=tarstr+"\\out\\";
+			}else{
+				tarstr=tarstr+"/out/";
+			}
+			targetpath=tarstr;
+		}
+		
 		placemap = new MapNode[nodesize];
 		places = 1; // doesn't start at 0, because a node with place 0 must always exist as the origin
 		
