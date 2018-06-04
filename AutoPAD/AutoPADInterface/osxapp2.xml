@@ -1,0 +1,22 @@
+<?eclipse.ant.import?>
+
+<project name="AutoPADInterfaceBundler">        
+
+	
+    <taskdef name="bundleapp"
+             classname="com.oracle.appbundler.AppBundlerTask"   
+             classpath="lib/appbundler-1.0.jar" />
+
+    <target name="bundle-AutoPADInterface2">
+        <bundleapp outputdirectory="dist"
+            name="AutoPADInterface"
+            displayname="AutoPAD Interface"
+            identifier="autopadinterface.AutoPADInterface"
+            mainclassname="autopadinterface.AutoPADInterface">
+            <classpath file="dist/AutoPADInterface.jar" />
+            <classpath file="lib/swt.jar"/>
+            <option value="-XstartOnFirstThread"/>
+        </bundleapp>
+    </target>
+
+</project>
